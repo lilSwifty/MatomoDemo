@@ -37,6 +37,7 @@
 		5338CB1B21F700E600029E60 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		5338CB1D21F72EC700029E60 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		53F9084221F9C54300A9D7DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		53F9084421F9CD3500A9D7DE /* MatomoDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MatomoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		E075140991F8724F836E3731 /* Pods-MatomoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatomoDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatomoDemo/Pods-MatomoDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +86,7 @@
 				5338CB1D21F72EC700029E60 /* Person.swift */,
 				530D5E7F21F757C50023F41A /* FirstButtonViewController.swift */,
 				530D5E8121F757D70023F41A /* SecondButtonViewController.swift */,
+				53F9084421F9CD3500A9D7DE /* MatomoDemo-Bridging-Header.h */,
 			);
 			path = MatomoDemo;
 			sourceTree = "<group>";
@@ -201,15 +203,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MatomoDemo/Pods-MatomoDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MatomoTracker/MatomoTracker.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MatomoTracker.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -385,6 +383,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MS.MatomoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MatomoDemo/MatomoDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -404,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = MS.MatomoDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MatomoDemo/MatomoDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
