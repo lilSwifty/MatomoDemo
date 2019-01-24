@@ -46,8 +46,11 @@
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FWt-T2-ghg">
                                 <rect key="frame" x="265" y="261" width="49" height="31"/>
+                                <connections>
+                                    <action selector="patientSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="3AP-fg-gR3"/>
+                                </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I accept" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX2-ib-lMU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Patient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX2-ib-lMU">
                                 <rect key="frame" x="124" y="261" width="126" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,8 +58,11 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m3U-De-w6X">
                                 <rect key="frame" x="265" y="308" width="49" height="31"/>
+                                <connections>
+                                    <action selector="clinicSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="gH8-vj-iFB"/>
+                                </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vlad 4 prez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzg-0q-8zP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Clinic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzg-0q-8zP">
                                 <rect key="frame" x="124" y="308" width="126" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,7 +82,7 @@
                             <constraint firstItem="KE8-mB-Utw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="PJQ-wG-SQT"/>
                             <constraint firstItem="FWt-T2-ghg" firstAttribute="leading" secondItem="fX2-ib-lMU" secondAttribute="trailing" constant="15" id="Qvg-oC-T4E"/>
                             <constraint firstItem="twy-hb-lui" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="SXW-AM-Mdr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FWt-T2-ghg" secondAttribute="trailing" constant="61" id="ScG-l6-CCH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FWt-T2-ghg" secondAttribute="trailing" constant="63" id="ScG-l6-CCH"/>
                             <constraint firstItem="KE8-mB-Utw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZPr-e8-nxM"/>
                             <constraint firstItem="FWt-T2-ghg" firstAttribute="trailing" secondItem="m3U-De-w6X" secondAttribute="trailing" id="cXk-aQ-efR"/>
                             <constraint firstItem="OHG-yT-ihB" firstAttribute="top" secondItem="KE8-mB-Utw" secondAttribute="bottom" constant="22" id="cpw-yI-WTO"/>
@@ -93,9 +99,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fyj-Nx-w02"/>
                     <connections>
-                        <outlet property="acceptance" destination="FWt-T2-ghg" id="plx-3T-cTa"/>
+                        <outlet property="clinic" destination="m3U-De-w6X" id="9B3-E2-YZU"/>
                         <outlet property="gender" destination="OHG-yT-ihB" id="4py-E6-HQf"/>
-                        <outlet property="presidentVlad" destination="m3U-De-w6X" id="6ed-W9-0TL"/>
+                        <outlet property="patient" destination="FWt-T2-ghg" id="ptj-6S-7kQ"/>
                         <outlet property="startBtn" destination="twy-hb-lui" id="S54-7X-Nwm"/>
                         <outlet property="userName" destination="KE8-mB-Utw" id="Sb0-aQ-GVJ"/>
                     </connections>

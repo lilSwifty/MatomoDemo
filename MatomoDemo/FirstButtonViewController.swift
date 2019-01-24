@@ -11,17 +11,11 @@ import MatomoTracker
 
 class FirstButtonViewController: UIViewController {
 
-    let matomo = TrackerClass()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //matomo.matomoTracker.track(view: ["Start", "SecondVC", "FirstBtnVC"])
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        matomo.matomoTracker.dispatch()
-    }
-    
+//        Tracker.shared.setCustomVariable(Tracker.shared.customVar2)
+        Tracker.shared.trackView("FirstButton")
 
+    }
 }
