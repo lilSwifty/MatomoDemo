@@ -17,6 +17,7 @@
 		5338CB1A21F6122A00029E60 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338CB1921F6122A00029E60 /* SecondViewController.swift */; };
 		5338CB1C21F700E600029E60 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338CB1B21F700E600029E60 /* Tracker.swift */; };
 		5338CB1E21F72EC700029E60 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5338CB1D21F72EC700029E60 /* Person.swift */; };
+		53F9084321F9C54300A9D7DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53F9084221F9C54300A9D7DE /* GoogleService-Info.plist */; };
 		69CE780FD47FA90AA4BDB767 /* Pods_MatomoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EDC06BBDB8D4AEE2465233 /* Pods_MatomoDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		5338CB1921F6122A00029E60 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5338CB1B21F700E600029E60 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
 		5338CB1D21F72EC700029E60 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		53F9084221F9C54300A9D7DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E075140991F8724F836E3731 /* Pods-MatomoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatomoDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatomoDemo/Pods-MatomoDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				5338CB0E21F6101600029E60 /* Assets.xcassets */,
 				5338CB1021F6101600029E60 /* LaunchScreen.storyboard */,
 				5338CB1321F6101600029E60 /* Info.plist */,
+				53F9084221F9C54300A9D7DE /* GoogleService-Info.plist */,
 				5338CB1921F6122A00029E60 /* SecondViewController.swift */,
 				5338CB1B21F700E600029E60 /* Tracker.swift */,
 				5338CB1D21F72EC700029E60 /* Person.swift */,
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5338CB1221F6101600029E60 /* LaunchScreen.storyboard in Resources */,
+				53F9084321F9C54300A9D7DE /* GoogleService-Info.plist in Resources */,
 				5338CB0F21F6101600029E60 /* Assets.xcassets in Resources */,
 				5338CB0D21F6101400029E60 /* Main.storyboard in Resources */,
 			);
@@ -197,11 +201,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MatomoDemo/Pods-MatomoDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MatomoTracker/MatomoTracker.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MatomoTracker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -29,7 +29,6 @@ class Tracker: NSObject {
     
     func trackEvent(category: String, action: String) {
         matomo.track(eventWithCategory: category, action: action, name: nil, number: nil, url: nil)
-        
         matomo.debugDispatch()
     }
     
